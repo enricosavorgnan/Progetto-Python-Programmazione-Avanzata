@@ -119,7 +119,7 @@ Per eseguire il programma, è sufficiente eseguire il file `main.py`:
 ```
 python3 main.py
 ```
-Il programma chiederà in input il path al file *.lmc* da eseguire.
+Il programma chiederà in input il path al file *.lmc* da eseguire e di scegliere tra esecuzione "all at once" (inserendo il valore 1) e "step by step" (inserendo il valore 0).  
 Il codice può alzare diverse eccezioni se il file *.lmc* non è correttamente scritto. Si veda la sezione sopra per maggiori dettagli sulle eccezioni.
 
 
