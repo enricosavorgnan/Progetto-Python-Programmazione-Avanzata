@@ -1,5 +1,6 @@
 ### Programmazione Avanzata e Parallela
 ### A.A. 2024-2025
+### Università degli Studi di Trieste
 
 <br>
 
