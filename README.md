@@ -43,7 +43,7 @@ Più nello specifico:
 #### main.py
    - Il file `main.py` è composto da un'unica funzione, `main()`, che si occupa di gestire il flusso di esecuzione del programma.  
 <br>
-   - In particolare, la funzione `main()` si occupa di:
+   - In particolare, la funzione `main()` si occupa di:  
      - Aprire il file *.lmc* in input.
      - Creare un'istanza della classe `Assembler` e di popolare la memoria.
      - Creare un'istanza della classe `LMC` e di eseguire il codice macchina. All'utente è chiesto di scegliere tra un'esecuzione "non-stop" oppure "step-by-step". Nel secondo caso, il programma esegue un'istruzione alla volta, aspettando un'indicazione da parte dell'utente per proseguire, e stampando lo status del programma a ciascuno step.  
