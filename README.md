@@ -41,8 +41,7 @@ Più nello specifico:
 
 <br><br>
 #### main.py
-   - Il file `main.py` è composto da un'unica funzione, `main()`, che si occupa di gestire il flusso di esecuzione del programma.  
-<br>
+   - Il file `main.py` è composto da un'unica funzione, `main()`, che si occupa di gestire il flusso di esecuzione del programma.
    - In particolare, la funzione `main()` si occupa di:  
      - Aprire il file *.lmc* in input.
      - Creare un'istanza della classe `Assembler` e di popolare la memoria.
