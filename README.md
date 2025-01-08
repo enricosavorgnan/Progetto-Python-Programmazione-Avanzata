@@ -80,7 +80,8 @@ Più nello specifico:
     - `self.overflow : bool` : flag che indica se le operazioni di somma e sottrazione hanno prodotto overflow o underflow
     - `self.running : bool` : flag che indica se il programma è in esecuzione
     - `self.opcodes : Dict{int: function}` : dizionario che mappa l'opcode dell'istruzione al metodo corrispondente.
-  <br>
+
+
   - `run(self)` : si occupa del flusso di esecuzione del programma. Questo termina quando l'attributo `self.running` è `False`, condizione passabile dai metodi `__hlt()` e `__inp()`. In particolare, si occupa di 
     - inizializzare la coda di input tramite il metodo `user_input()` 
     - ricavare l'istruzione dalla cella di memoria indicata dal program counter, 
