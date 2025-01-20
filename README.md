@@ -1,5 +1,6 @@
 ### Programmazione Avanzata e Parallela
 ### A.A. 2024-2025
+### Università degli Studi di Trieste
 
 <br>
 
@@ -40,13 +41,12 @@ Più nello specifico:
 
 <br><br>
 #### main.py
-   - Il file `main.py` è composto da un'unica funzione, `main()`, che si occupa di gestire il flusso di esecuzione del programma.  
-<br>
-   - In particolare, la funzione `main()` si occupa di:
+   - Il file `main.py` è composto da un'unica funzione, `main()`, che si occupa di gestire il flusso di esecuzione del programma.
+   - In particolare, la funzione `main()` si occupa di:  
      - Aprire il file *.lmc* in input.
      - Creare un'istanza della classe `Assembler` e di popolare la memoria.
-     - Creare un'istanza della classe `LMC` e di eseguire il codice macchina. All'utente è chiesto di scegliere tra un'esecuzione "non-stop" oppure "step-by-step". Nel secondo caso, il programma esegue un'istruzione alla volta, aspettando un'indicazione da parte dell'utente per proseguire, e stampando lo status del programma a ciascuno step. 
-     - Stampare l'output della coda ottenuta al termine dell'esecuzione del codice.
+     - Creare un'istanza della classe `LMC` e di eseguire il codice macchina. All'utente è chiesto di scegliere tra un'esecuzione "non-stop" oppure "step-by-step". Nel secondo caso, il programma esegue un'istruzione alla volta, aspettando un'indicazione da parte dell'utente per proseguire, e stampando lo status del programma a ciascuno step.  
+     - Stampare l'output della coda ottenuta al termine dell'esecuzione del codice.  
      
 <br><br>
 #### assembler.py
@@ -80,7 +80,8 @@ Più nello specifico:
     - `self.overflow : bool` : flag che indica se le operazioni di somma e sottrazione hanno prodotto overflow o underflow
     - `self.running : bool` : flag che indica se il programma è in esecuzione
     - `self.opcodes : Dict{int: function}` : dizionario che mappa l'opcode dell'istruzione al metodo corrispondente.
-  <br>
+
+
   - `run(self)` : si occupa del flusso di esecuzione del programma. Questo termina quando l'attributo `self.running` è `False`, condizione passabile dai metodi `__hlt()` e `__inp()`. In particolare, si occupa di 
     - inizializzare la coda di input tramite il metodo `user_input()` 
     - ricavare l'istruzione dalla cella di memoria indicata dal program counter, 
@@ -118,7 +119,7 @@ Per eseguire il programma, è sufficiente eseguire il file `main.py`:
 ```
 python3 main.py
 ```
-Il programma chiederà in input il path al file *.lmc* da eseguire.
+Il programma chiederà in input il path al file *.lmc* da eseguire e di scegliere tra esecuzione "all at once" (inserendo il valore 1) e "step by step" (inserendo il valore 0).  
 Il codice può alzare diverse eccezioni se il file *.lmc* non è correttamente scritto. Si veda la sezione sopra per maggiori dettagli sulle eccezioni.
 
 
